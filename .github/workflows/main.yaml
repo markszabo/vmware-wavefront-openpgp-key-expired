@@ -15,5 +15,8 @@ jobs:
         with:
           terraform_wrapper: false
 
+      - name: "Terraform version"
+        run: terraform -version
+        
       - name: "Terraform Init"
         run: terraform init
